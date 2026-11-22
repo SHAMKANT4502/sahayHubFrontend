@@ -1,5 +1,12 @@
 <section class="hero">
   <h1>Welcome to SahayHub</h1>
+  <section class="health">
+    @switch (status()) {
+      @case ('loading') { <p>Checking backend...</p> }
+      @case ('ok') { <p class="ok">Backend status: ok ({{ serviceName() }})</p> }
+      @case ('error') { <p class="error">Backend unreachable</p> }
+    }
+  </section>
   <p>
     A community platform that connects people who have surplus with people in need,
     and makes civic problems visible and trackable.
