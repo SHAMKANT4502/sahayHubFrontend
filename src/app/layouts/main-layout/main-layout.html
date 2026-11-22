@@ -1,0 +1,16 @@
+<header class="navbar">
+  <a routerLink="/" class="brand">SahayHub</a>
+  <nav class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <span class="placeholder">Donations</span>
+    <span class="placeholder">Login</span>
+  </nav>
+</header>
+
+<main class="content">
+  <router-outlet />
+</main>
+
+<footer class="footer">
+  <p>© {{ currentYear }} SahayHub. Share surplus. Solve problems together.</p>
+</footer>
