@@ -13,3 +13,11 @@
     line-height: 1.6;
   }
 }
+
+.health {
+  text-align: center;
+  margin-top: 1.5rem;
+
+  .ok { color: #2e7d32; font-weight: 600; }
+  .error { color: #c62828; font-weight: 600; }
+}
